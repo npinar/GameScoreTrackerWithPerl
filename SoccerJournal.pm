@@ -3,17 +3,16 @@ package SoccerJournal;
 use strict;
 use warnings;
 
-sub new{
-    my ($class,$args) = @_;
-    my $self = bless { myTeam => $args->{myteam},
-                       date => $args->{date}, 
-                       goals => $args->{goals}
-                     }, $class;
-                     
-                    
+
+sub new {
+
+    my $class = shift;
+    my $self = {};
+    bless $self, $class;
+    return $self;
+	
 }
 
- 
 sub get_myTeam{
   my $self = shift;
   return $self->{myTeam};

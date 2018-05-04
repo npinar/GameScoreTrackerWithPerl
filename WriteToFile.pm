@@ -3,6 +3,7 @@ package WriteToFile;
 use strict;
 use warnings;
 
+
 sub new {
 	
 	my($class, $args) = @_;
@@ -20,7 +21,7 @@ sub write {
 	print FH $self->{mydata};
  
 	close(FH);
-	print "Writing to file successfully!\n";	
+	print "Your entry updated successfully!\n";	
 }
 
 1;
